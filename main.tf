@@ -15,7 +15,7 @@ data "aws_ami" "app_ami" {
 }
 
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.app_ami.id
+  ami           = "ami-07d3a50bd29811cd1"
   instance_type = "t2.micro"
 
   tags = {
